@@ -1,0 +1,28 @@
+# --- Phase 1 (implemented in this drop) ---
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+pydantic==2.9.2
+pydantic-settings==2.5.2
+sqlalchemy==2.0.35
+asyncpg==0.29.0
+alembic==1.13.2
+qdrant-client==1.11.1
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx==0.27.2
+
+# --- Phase 2+ (agents, LangGraph, embeddings, auth — not yet wired) ---
+langchain==0.3.*
+langgraph==0.2.*
+langsmith
+openai
+anthropic
+motor              # async MongoDB
+redis
+celery
+python-jose[cryptography]  # JWT
+passlib[bcrypt]
+
+# --- UI (Streamlit) ---
+streamlit==1.38.0
+requests==2.32.3
